@@ -87,7 +87,7 @@ input, select, textarea {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
+    grid-gap: 1em;
     align-items: center;
 }
 
