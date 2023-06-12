@@ -71,6 +71,20 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* own */
+
+.icon-below-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+.icon-below-pic a {
+    font-size: 2em;
+    color: #fff;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
