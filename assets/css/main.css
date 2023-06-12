@@ -79,9 +79,15 @@ input, select, textarea {
 	50% { transform: translate(0px,0px); }
 	75% { transform: translate(-3px,-3px); }
 	100% { transform: translate(0px,0px); }
-	}
+}
+@keyframes dash {
+	0% { stroke-dashoffset: 0; }
+	50% { stroke-dashoffset: -10; }
+	100% { stroke-dashoffset: -20; }
+}
 path {
-	animation: move .75s linear infinite;
+	animation: move .75s linear infinite, dash .75s linear infinite;
+	stroke-dasharray: 10;
 }
 	
 
