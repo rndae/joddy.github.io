@@ -73,22 +73,15 @@ input, select, textarea {
 
 /* own */
 
-.icon-below-pic {
+.icon-header-pic {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1em;
 }
-.icon-below-pic a {
+.icon-header-pic a {
     font-size: 2em;
     color: #fff;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    align-items: center;
 }
 
 /* Basic */
