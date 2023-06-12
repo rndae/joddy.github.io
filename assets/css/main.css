@@ -84,6 +84,12 @@ input, select, textarea {
     color: #fff;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    align-items: center;
+}
 
 /* Basic */
 
