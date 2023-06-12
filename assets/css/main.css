@@ -73,9 +73,18 @@ input, select, textarea {
 
 /* own */
 
-@keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes move {
+	0% { transform: translate(0px,0px); }
+	25% { transform: translate(3px,3px); }
+	50% { transform: translate(0px,0px); }
+	75% { transform: translate(-3px,-3px); }
+	100% { transform: translate(0px,0px); }
+}
 
-path { animation: rotate 2s linear infinite; }
+path {
+	animation: move .75s linear infinite;
+}
+	
 
 .profile.image { 
 	max-width: 350px;
