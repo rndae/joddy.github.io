@@ -2356,10 +2356,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.image.phone .inner, .image.phone:before, .image.phone:after {
-				display: none;
-			}
-
 			.image.phone .inner {
 				position: relative;
 			}
