@@ -74,10 +74,10 @@ input, select, textarea {
 /* own */
 
 .profile.image { 
-	border: solid 2px #fff;
-	border-radius: 50%;
 	max-width: 350px;
 	max-height: 350px;
+	min-width: 100px;
+	min-height: 100px;
 	object-fit: cover; 
 }
 
