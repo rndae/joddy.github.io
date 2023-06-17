@@ -90,6 +90,7 @@ path { animation: dash .75s linear infinite; stroke-dasharray: 10; }
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
 }
 .icon-header-pic a {
     font-size: 2em;
