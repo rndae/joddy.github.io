@@ -9,11 +9,10 @@
     :root {
       --text-color: #333333;
       --title-color: #222222;
-      --link-color: #66CCFF;
+      --link-color: #0091e5;
       --text-bg-old: #F0F0F0;
       --text-bluwu-bold: #0D1B2A;
     }
-
 
     @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
@@ -21,13 +20,11 @@
       font-family: 'Inconsolata', monospace;
     }
 
-
     body {
       margin: 0;
       padding: 0;
       background: radial-gradient(circle at center, var(--bg-color) 0%, black 100%);
     }
-
 
     body::before {
       z-index: 2;
@@ -38,8 +35,6 @@
       right: 0;
       bottom: 0;
       pointer-events: none;
-
-
 
       background: linear-gradient(to bottom, transparent 0%, rgba(252, 188, 44, 0.1) 50%, transparent 100%);
       background-size: 100% 4px;
@@ -84,7 +79,6 @@
       animation: flicker 0.15s infinite;
     }
 
-
     .container {
       position: relative;
       width: 80%;
@@ -96,106 +90,6 @@
       transform: perspective(800px) rotateX(2deg) rotateY(-1deg);
     }
 
-    .skills {
-      color: var(--text-color);
-    }
-
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-template-rows: repeat(3, auto);
-      gap: 0px;
-      background: rgba(0, 0, 0, 0.2);
-
-    }
-
-
-    .item {
-
-      height: auto;
-
-      align-self: start;
-
-      overflow: auto;
-
-    }
-
-
-    h2 {
-      font-size: 1.2rem;
-      text-align: left;
-      z-index: 1;
-      margin-bottom: -10px;
-    }
-
-
-    hr {
-      position: relative;
-      top: -10px;
-      width: 80%;
-      border: 1px solid var(--text-color);
-
-      z-index: 0;
-    }
-
-    h2 {
-      position: relative;
-      background-color: var(--text-bg-old);
-      color: var(--bg-color);
-    }
-
-    h2::before,
-    h2::after {
-      content: "";
-      position: revert-layer;
-      top: 50%;
-      height: 3px;
-      background-color: transparent;
-    }
-
-    h2::before {
-      width: 50%;
-      left: -50%;
-    }
-
-    h2::after {
-      width: 100%;
-      left: 100%;
-    }
-
-
-
-
-
-
-
-
-    img {
-      display: block;
-      margin: 5px;
-      padding: 5px;
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-
-    .grid img {
-      display: block;
-      margin: 5px;
-      padding: 5px;
-      max-width: 100px;
-      max-height: 100px;
-    }
-
-
-
-    span {
-      display: block;
-      margin: 5px;
-      padding: 5px;
-    }
-
     .noise {
       position: absolute;
       top: 0;
@@ -205,30 +99,7 @@
       width: 100%;
       height: 100%;
       opacity: 0.2;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==");
-      background-repeat: repeat;
       pointer-events: none;
-    }
-
-
-    h1,
-    p,
-    a {
-      color: var(--text-color);
-    }
-
-    summary {
-      color: var(--text-color);
-      cursor: help;
-    }
-
-    summary:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      color: var(--title-color);
-      font-size: 1.8rem;
     }
 
     a {
@@ -249,43 +120,24 @@
 
     li {
       margin: 10px 0;
+      float: left;
+      padding-right: 44px;
     }
 
-    label {
-      color: var(--text-color);
-    }
-
-
-    code {
-      display: block;
-      padding: 10px;
-
-
-
-      color: var(--text-bluwu-bold);
-      filter: blur(0.3px);
-    }
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <div class="noise"> </div>
-    <label>><label style="color: var(--text-bluwu-bold);"> rv@www</label>:<label
-        style="color: var(--link-color);">~</label>
-      <label>$</label>dshfioewur32oijcr32iour23our3ruo32iur82837498290-4975843hfwehfke</label>
-    <div>
-      <span>
-        <h1>Rodrigo Vena</h1>
-
-      </span>
-      <div style="clear: right" />
-    </div>
-    <p>
-      (<a href="https://github.com/rndae">github</a>)
-      (<a href="mailto:rodrigo.vena.g@gmail.com">e-mail</a>)
-    </p>
+      <ul>
+        <li>
+          <a href="https://github.com/rndae">github</a>
+        </li>
+        <li>
+          <a href="mailto:rodrigo.vena.g@gmail.com">e-mail</a>
+        </li>
+      </ul>
   </div>
 </body>
 
