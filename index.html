@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-			<title>Rodrigo Vena</title>
-			<style>
-/* Previous color palette
+
+<head>
+  <meta charset="utf-8">
+  <title>Rodrigo Vena</title>
+  <style>
 
     :root {
-      --bg-color: #301F0C;
-      --text-color: #DB8826;
-      --title-color: #784714;
-      --link-color: #9C4414;
-	  --text-bg-old: #9a8642;
-	  --yeold-text-yellow-bright: #F5D76E;
+      --text-color: #333333;
+      --title-color: #222222;
+      --link-color: #66CCFF;
+      --text-bg-old: #F0F0F0;
+      --text-bluwu-bold: #0D1B2A;
     }
 
-:root {
-  --bg-color: #301F0C;
-  --text-color: #DB8826;
-  --title-color: #784714;
-  --link-color: #9C4414;
-  --text-bg-old: #9a8642;
-  --ye_not_so_oldtext-yellow-bright: #FFFF99;
-}
-*/
-:root {
-  --text-color: #333333; /* A dark gray for text */
-  --title-color: #222222; /* A darker gray for titles */
-  --link-color: #66CCFF; /* A light blue for links */
-  --text-bg-old: #F0F0F0; /* A light gray for background */
-  --text-bluwu-bold: #0D1B2A; /* A bright yellow for accents */
-}
 
-    
     @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
     * {
       font-family: 'Inconsolata', monospace;
     }
 
-    
+
     body {
       margin: 0;
       padding: 0;
       background: radial-gradient(circle at center, var(--bg-color) 0%, black 100%);
     }
 
-    
+
     body::before {
-	  z-index: 2;
+      z-index: 2;
       content: "";
       position: fixed;
       top: 0;
@@ -55,170 +38,164 @@
       right: 0;
       bottom: 0;
       pointer-events: none;
-      
-	  
-	  
-  background: linear-gradient(to bottom, transparent 0%, rgba(252, 188, 44, 0.1) 50%, transparent 100%);
-  background-size: 100% 4px;
-  
-  animation: flicker 0.15s infinite;
-  
-  filter: contrast(150%) brightness(80%) grayscale(20%) sepia(10%) hue-rotate(-10deg);
-  
-  mix-blend-mode: multiply;
-        transform: rotateX(2deg) rotateY(-1deg);
+
+
+
+      background: linear-gradient(to bottom, transparent 0%, rgba(252, 188, 44, 0.1) 50%, transparent 100%);
+      background-size: 100% 4px;
+
+      animation: flicker 0.15s infinite;
+
+      filter: contrast(150%) brightness(80%) grayscale(20%) sepia(10%) hue-rotate(-10deg);
+
+      mix-blend-mode: multiply;
+      transform: rotateX(2deg) rotateY(-1deg);
     }
 
-    
+
     @keyframes flicker {
       0% {
         opacity: 0.87;
       }
+
       5% {
         opacity: 0.95;
       }
+
       10% {
         opacity: 0.87;
       }
+
       15% {
         opacity: 0.9;
       }
+
       20% {
         opacity: 0.9;
       }
+
       100% {
         opacity: 0.85;
       }
     }
 
-    
+
     body {
       animation: flicker 0.15s infinite;
     }
 
-    
+
     .container {
       position: relative;
       width: 80%;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      
+
       filter: url(#distortion);
       transform: perspective(800px) rotateX(2deg) rotateY(-1deg);
     }
-	
-.skills {
-	color: var(--text-color);
-}
+
+    .skills {
+      color: var(--text-color);
+    }
 
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(3, auto);
-  gap: 0px;
-  background: rgba(0, 0, 0, 0.2);
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: repeat(3, auto);
+      gap: 0px;
+      background: rgba(0, 0, 0, 0.2);
 
-}
+    }
 
 
-.item {
-  
-  height: auto;
-  
-  align-self: start;
-    
-  overflow: auto;
+    .item {
 
-}
+      height: auto;
+
+      align-self: start;
+
+      overflow: auto;
+
+    }
 
 
     h2 {
       font-size: 1.2rem;
       text-align: left;
-	  z-index: 1; 
-	  margin-bottom: -10px; 
+      z-index: 1;
+      margin-bottom: -10px;
     }
 
-    
+
     hr {
       position: relative;
       top: -10px;
       width: 80%;
       border: 1px solid var(--text-color);
-      
+
       z-index: 0;
     }
 
-h2 {
-  position: relative; 
-  background-color: var(--text-bg-old); 
-  color: var(--bg-color);
-}
+    h2 {
+      position: relative;
+      background-color: var(--text-bg-old);
+      color: var(--bg-color);
+    }
 
-h2::before, h2::after {
-  content: ""; 
-  position: revert-layer; 
-  top: 50%; 
-  height: 3px; 
-  background-color: transparent; 
-}
+    h2::before,
+    h2::after {
+      content: "";
+      position: revert-layer;
+      top: 50%;
+      height: 3px;
+      background-color: transparent;
+    }
 
-h2::before {
-  width: 50%; 
-  left: -50%; 
-}
+    h2::before {
+      width: 50%;
+      left: -50%;
+    }
 
-h2::after {
-  width: 100%; 
-  left: 100%; 
-}
-
-
-
+    h2::after {
+      width: 100%;
+      left: 100%;
+    }
 
 
 
 
 
-img {
-  display: block;
-  margin: 5px;
-  padding: 5px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-
-.grid img {
-  display: block;
-  margin: 5px;
-  padding: 5px;
-  max-width: 100px;
-  max-height: 100px;
-}
 
 
 
-span {
-  display: block;
-  margin: 5px;
-  padding: 5px;
-}
+    img {
+      display: block;
+      margin: 5px;
+      padding: 5px;
+      max-width: 100%;
+      max-height: 100%;
+    }
 
 
-    
-    <svg height="0" width="0">
-					<defs>
-						<filter id="distortion">
-							<feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="3" result="warp"/>
-							<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp"/>
-						</filter>
-					</defs>
-				</svg>
+    .grid img {
+      display: block;
+      margin: 5px;
+      padding: 5px;
+      max-width: 100px;
+      max-height: 100px;
+    }
 
-    
+
+
+    span {
+      display: block;
+      margin: 5px;
+      padding: 5px;
+    }
+
     .noise {
       position: absolute;
       top: 0;
@@ -233,33 +210,25 @@ span {
       pointer-events: none;
     }
 
-    
-    h1, p, a {
+
+    h1,
+    p,
+    a {
       color: var(--text-color);
     }
-	
-	p {
-	  /*text-shadow: 0 0 5px var(--text-color);*/
-	}
-	
-	a {
-	  /*text-shadow: 0 0 5px var(--link-color);*/
-	}
-	
-	summary {
-	  color: var(--text-color);
-	  cursor: help;
-	  /*text-shadow: 0 0 10px var(--text-color);*/
-	}
-	
-	summary:hover {
-	  text-decoration: underline;
-	}
+
+    summary {
+      color: var(--text-color);
+      cursor: help;
+    }
+
+    summary:hover {
+      text-decoration: underline;
+    }
 
     h1 {
       color: var(--title-color);
       font-size: 1.8rem;
-	  /*text-shadow: 0 0 4px var(--title-color);*/
     }
 
     a {
@@ -271,7 +240,7 @@ span {
       text-decoration: underline;
     }
 
-    
+
     ul {
       list-style: none;
       padding: 0;
@@ -281,68 +250,43 @@ span {
     li {
       margin: 10px 0;
     }
-	
-	label {
-	 color: var(--text-color);
-	 /*text-shadow: 0 0 10px var(--text-color);*/
-	}
 
-    
+    label {
+      color: var(--text-color);
+    }
+
+
     code {
       display: block;
       padding: 10px;
-      
-      
-      
-	  color: var(--text-bluwu-bold);
-	  /*text-shadow: 0 0 10px var(--text-bluwu-bold);*/
-	  filter: blur(0.3px);
+
+
+
+      color: var(--text-bluwu-bold);
+      filter: blur(0.3px);
     }
-	
   </style>
-		
-		</head>
-		<body>
-			<div class="container">
-				<div class="noise"> </div>
-				<label>><label style="color: var(--text-bluwu-bold);"> rv@www</label>:<label style="color: var(--link-color);">~</label>
-					<label>$</label>dshfioewur32oijcr32iour23our3ruo32iur82837498290-4975843hfwehfke</label>
-				<div>
-						<span>
-							<h1>Rodrigo Vena</h1>
-							
-									</span>
-									<div style="clear: right"/>
-				</div>
-								<p>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="noise"> </div>
+    <label>><label style="color: var(--text-bluwu-bold);"> rv@www</label>:<label
+        style="color: var(--link-color);">~</label>
+      <label>$</label>dshfioewur32oijcr32iour23our3ruo32iur82837498290-4975843hfwehfke</label>
+    <div>
+      <span>
+        <h1>Rodrigo Vena</h1>
+
+      </span>
+      <div style="clear: right" />
+    </div>
+    <p>
       (<a href="https://github.com/rndae">github</a>)
-      <!--(<a href="https://raw.githubusercontent.com/rndae/rndae.github.io/92c57b64ee86ea94ed2b846ae239bcc118486aaf/resume.pdf">cv</a>) -->
       (<a href="mailto:rodrigo.vena.g@gmail.com">e-mail</a>)
     </p>
-								<h2>Data Analyst at FreeCast</h2>
-								<hr>
-									<div class="grid">
-					
-																													</div>
-																							</div>
-																											<h2>Researcher at APPLeSEEdLab, University of Central Florida</h2>
-																											<hr>
-																												<div class="grid">
-																													<div class="item">
-																														<code>
-																															<!-- <img src="ceta.jpg" alt="CETA Project"> -->
-																																<span>Corporate Entity Tracking Automation<br>
-																																		<span class="skills">Python, Neo4j, Cypher, Graph Algorithms</span>
-																																		<br>
-																																			<details open>
-																																				<summary>Description</summary>Built a temporal graph calculus that generalizes and simplifies temporal graph management for corporate structures and reduces the complexity of Cypher queries</details>
-																																		</span>
-																																	</code>
-																																</div>
-																															</div>
-																															<h2>Projects</h2>
-																															<hr>
-																																<div class="grid">
-																																</div>
-																																									</body>
-																																								</html>
+  </div>
+</body>
+
+</html>
