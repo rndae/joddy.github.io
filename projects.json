@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Brand and Model Recognition in Product Titles",
+        "tech-stack": "Python, NLP, RNN, TensorFlow, Flair, spaCy, NER, BI-LSTM-CRF",
+        "picture": "brand_model.jpg",
+        "description": "A project focused on recognizing brand and model names in product titles using data from ABO. Implemented using advanced NLP techniques and machine learning models.",
+        "link": "https://github.com/rndae/NER_product_model_name"
+    },
+    {
+        "title": "Shader: Iridescence of Oil on Water",
+        "tech-stack": "Unity 15f1, DX11, C#",
+        "picture": "oil_iridescence.gif",
+        "description": "A shader that simulates the iridescence of oil on water, adjusting based on oil density, view angle, and light intensity.",
+        "link": "https://www.youtube.com/watch?v=9GPO1WHYXtU"
+    },
+    {
+        "title": "Laboratory Management System & VLE",
+        "tech-stack": "Debian, PHP, Laravel, MariaDB, JS, Git",
+        "picture": "lab_management.jpg",
+        "description": "A comprehensive system for managing laboratory operations and virtual learning environments, developed using PHP and Laravel.",
+        "link": "https://gitlab.com/the-code-tellers/AdminLabo"
+    },
+    {
+        "title": "Symbolic Execution for C Programs",
+        "tech-stack": "Java, ANTLR, C, Bash",
+        "picture": "symbolic_execution.jpg",
+        "description": "A compiler feature that uses symbolic execution to verify multiple paths of C programs, ensuring code reliability and correctness.",
+        "link": "https://github.com/rndae/symbolic-execution-clikelang"
+    },
+    {
+        "title": "Blind Dating Web App",
+        "tech-stack": "Ubuntu, MongoDB, Node.js, Express, Git, JS, HTML/CSS",
+        "picture": "blind_dating.jpg",
+        "description": "A web application for blind dating, built with a robust backend and a user-friendly interface. Deployed on an Ubuntu server.",
+        "link": "https://github.com/rndae/blinddate-app"
+    },
+    {
+        "title": "TestDriveLiveTv Website",
+        "tech-stack": "Next.js, Express.js, MySQL, Tailwind CSS",
+        "picture": "testdrive_live.jpg",
+        "description": "A dynamic website for live test drives, built with Next.js for server-side rendering, Express.js for the backend, MySQL for database management, and Tailwind CSS for styling.",
+        "link": ""
+    }
+]
